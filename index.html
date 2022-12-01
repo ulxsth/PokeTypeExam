@@ -5,19 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
     <script src="index.js" type="module"></script>
     <title>PokeTypeExam</title>
 </head>
 <body>
     <header>
-        <h1></h1>
+        <h1 class="headline">タイプ相性テスター</h1>
     </header>
-        <div id="type-view">
+    <main>
+        <div id="type-view-area">
             <img src="img/type/fire.svg" class="type image" id="atk-image" data-typeid="1">
-            <img src="img/util/right_arrow.svg" class="image">
+            <img src="img/util/right_arrow.svg" class="arrow image">
             <img src="img/type/fire.svg" class="type image" id="def-image" data-typeid="1">
         </div>
-        <div id="input">
+        <div id="input-area">
             <input type="text" id="input-textarea" placeholder="答えを入力">
             <input type="button" value="回答" id="answer-button">
             <input type="button" value="更新" id="reload-button">
